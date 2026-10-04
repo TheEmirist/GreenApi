@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GREEN-API</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="controls" aria-label="Управление">
+      <div class="group">
+        <input
+          id="idInstance"
+          type="text"
+          placeholder="idInstance"
+          autocomplete="off"
+        />
+        <input
+          id="apiTokenInstance"
+          type="text"
+          placeholder="ApiTokenInstance"
+          autocomplete="off"
+        />
+      </div>
+
+      <div class="group">
+        <button type="button" id="btnGetSettings">getSettings</button>
+        <button type="button" id="btnGetStateInstance">getStateInstance</button>
+      </div>
+
+      <div class="group">
+        <input
+          id="phoneMessage"
+          type="text"
+          placeholder="77771234567"
+          inputmode="tel"
+          autocomplete="off"
+        />
+        <textarea
+          id="messageText"
+          rows="3"
+          placeholder="Hello World!"
+        ></textarea>
+        <button type="button" id="btnSendMessage">sendMessage</button>
+      </div>
+
+      <div class="group">
+        <input
+          id="phoneFile"
+          type="text"
+          placeholder="77771234567"
+          inputmode="tel"
+          autocomplete="off"
+        />
+        <input
+          id="fileUrl"
+          type="url"
+          placeholder="https://my.site.com/img/horse.png"
+          autocomplete="off"
+        />
+        <button type="button" id="btnSendFileByUrl">sendFileByUrl</button>
+      </div>
+    </section>
+
+    <section class="response" aria-label="Ответ API">
+      <h2 class="response__title">Ответ:</h2>
+      <textarea
+        id="responseOutput"
+        class="response__output"
+        readonly
+        placeholder='{
+  "idMessage": "3EB0C7C7D037B7C7C030"
+}'
+      ></textarea>
+    </section>
+  </main>
+
+  <footer class="footer">GREEN API © 2025</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
